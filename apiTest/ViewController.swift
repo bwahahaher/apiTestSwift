@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var regSurname: UITextField!
     @IBOutlet weak var regPatronymic: UITextField!
     @IBOutlet weak var regEmail: UITextField!
-    @IBOutlet weak var regBday: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         apiRegister(number: "number", name: "name", surname: "surname", patronymic: "patronymic", email: "email", bday: "bday", male: true)
@@ -28,9 +28,8 @@ class ViewController: UIViewController {
         let surname = regSurname.text!
         let patronymic = regPatronymic.text!
         let email = regEmail.text!
-        let bday = regBday.text!
         let male = true
-        apiRegister(number: number, name: name, surname: surname, patronymic: patronymic, email: email, bday: bday, male: true)
+        apiRegister(number: number, name: name, surname: surname, patronymic: patronymic, email: email, bday: "1990-02-02", male: male)
     }
     @IBAction func buttonClick(_ sender: UIButton) {
         let number = regNumber.text!
@@ -38,9 +37,8 @@ class ViewController: UIViewController {
         let surname = regSurname.text!
         let patronymic = regPatronymic.text!
         let email = regEmail.text!
-        let bday = regBday.text!
         let male = true
-        apiRegister(number: number, name: name, surname: surname, patronymic: patronymic, email: email, bday: bday, male: true)
+        apiRegister(number: number, name: name, surname: surname, patronymic: patronymic, email: email, bday: "1990-02-02", male: true)
     }
     func apiRegister(number: String, name : String, surname: String, patronymic: String, email: String, bday: String, male: Bool){
         
