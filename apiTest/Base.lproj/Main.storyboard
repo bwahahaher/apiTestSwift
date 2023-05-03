@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="apiTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕГИСТРАЦИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zE-vf-gvp">
+                                <rect key="frame" x="111" y="70" width="192" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-3c-2CZ">
+                                <rect key="frame" x="62" y="151" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Дата рождения" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BkQ-fu-TeN">
+                                <rect key="frame" x="62" y="346" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="18R-d1-4ix">
+                                <rect key="frame" x="188" y="206" width="165" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-FS-44M">
+                                <rect key="frame" x="62" y="206" width="118" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kCx-a6-zSY">
+                                <rect key="frame" x="62" y="248" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAR-zh-IYg">
+                                <rect key="frame" x="62" y="297" width="291" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKB-4m-eMB">
+                                <rect key="frame" x="93" y="433" width="229" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Зарегестрироваться">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yY-qA-iKM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kCx-a6-zSY" secondAttribute="trailing" constant="61" id="034-40-K2O"/>
+                            <constraint firstItem="Mrs-FS-44M" firstAttribute="top" secondItem="qBc-3c-2CZ" secondAttribute="bottom" constant="21" id="2rV-vr-A1g"/>
+                            <constraint firstItem="qBc-3c-2CZ" firstAttribute="top" secondItem="2zE-vf-gvp" secondAttribute="bottom" constant="52" id="5Op-Bu-egK"/>
+                            <constraint firstItem="fKB-4m-eMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="8Rw-pu-oxk"/>
+                            <constraint firstItem="2zE-vf-gvp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="8aS-qc-jio"/>
+                            <constraint firstItem="qBc-3c-2CZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="Ff1-0O-KVn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="18R-d1-4ix" secondAttribute="trailing" constant="61" id="H2U-ia-q2X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2zE-vf-gvp" secondAttribute="trailing" constant="111" id="HuA-40-tZK"/>
+                            <constraint firstItem="18R-d1-4ix" firstAttribute="leading" secondItem="Mrs-FS-44M" secondAttribute="trailing" constant="8" id="KSq-Pl-Zan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qBc-3c-2CZ" secondAttribute="trailing" constant="61" id="Owu-vK-3h6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fKB-4m-eMB" secondAttribute="trailing" constant="92" id="Pr3-OM-6uF"/>
+                            <constraint firstItem="BkQ-fu-TeN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="Ydm-vv-QyB"/>
+                            <constraint firstItem="iAR-zh-IYg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="aep-IV-PC6"/>
+                            <constraint firstItem="iAR-zh-IYg" firstAttribute="top" secondItem="kCx-a6-zSY" secondAttribute="bottom" constant="15" id="aiT-Du-gcj"/>
+                            <constraint firstItem="fKB-4m-eMB" firstAttribute="top" secondItem="BkQ-fu-TeN" secondAttribute="bottom" constant="53" id="al4-Zh-iXR"/>
+                            <constraint firstItem="18R-d1-4ix" firstAttribute="top" secondItem="qBc-3c-2CZ" secondAttribute="bottom" constant="21" id="f2L-XQ-kZ6"/>
+                            <constraint firstItem="Mrs-FS-44M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="n3x-zw-V4W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAR-zh-IYg" secondAttribute="trailing" constant="61" id="r2J-72-yYt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mrs-FS-44M" secondAttribute="trailing" constant="234" id="rqc-jT-7Nj"/>
+                            <constraint firstItem="2zE-vf-gvp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="sMn-qx-4P9"/>
+                            <constraint firstItem="kCx-a6-zSY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="sfm-gM-4Ld"/>
+                            <constraint firstItem="BkQ-fu-TeN" firstAttribute="top" secondItem="iAR-zh-IYg" secondAttribute="bottom" constant="15" id="uve-zt-lDS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BkQ-fu-TeN" secondAttribute="trailing" constant="61" id="vI4-cd-nga"/>
+                            <constraint firstItem="kCx-a6-zSY" firstAttribute="top" secondItem="Mrs-FS-44M" secondAttribute="bottom" constant="8" id="z3H-8N-tgn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="regBday" destination="BkQ-fu-TeN" id="xDy-bQ-Ave"/>
+                        <outlet property="regEmail" destination="iAR-zh-IYg" id="UJh-pD-uDf"/>
+                        <outlet property="regName" destination="Mrs-FS-44M" id="K1h-XF-xDU"/>
+                        <outlet property="regNumber" destination="qBc-3c-2CZ" id="Dh5-7u-3Rp"/>
+                        <outlet property="regPatronymic" destination="kCx-a6-zSY" id="a07-fD-qNa"/>
+                        <outlet property="regSurname" destination="18R-d1-4ix" id="0Em-Yc-hsc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
