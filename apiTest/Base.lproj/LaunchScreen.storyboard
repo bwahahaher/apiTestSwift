@@ -69,6 +69,35 @@
             </objects>
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="JXG-C3-IAG">
+            <objects>
+                <viewController id="pQH-qF-bMb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tBV-3M-bMo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РЕГИСТРАЦИЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDW-MR-feY">
+                                <rect key="frame" x="111" y="66" width="192" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p7x-Cn-080"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p7x-Cn-080" firstAttribute="trailing" secondItem="vDW-MR-feY" secondAttribute="trailing" constant="111" id="4EO-dE-s4q"/>
+                            <constraint firstItem="vDW-MR-feY" firstAttribute="leading" secondItem="p7x-Cn-080" secondAttribute="leading" constant="111" id="PSA-X2-X1r"/>
+                            <constraint firstItem="vDW-MR-feY" firstAttribute="centerY" secondItem="p7x-Cn-080" secondAttribute="centerY" constant="-371" id="Y4q-T7-wXl"/>
+                            <constraint firstItem="vDW-MR-feY" firstAttribute="top" secondItem="p7x-Cn-080" secondAttribute="top" constant="22" id="pEp-eB-yfe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXE-4c-jPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-664" y="375"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
