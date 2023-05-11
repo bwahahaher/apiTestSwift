@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        print(UserSettings.userName)
     }
     @IBAction func buttonClick(_ sender: UIButton) {
         let number = regNumber.text!
@@ -67,6 +67,9 @@ class ViewController: UIViewController {
         print(String(decoding: data!, as: UTF8.self))
         }
         task.resume()
+        UserSettings.login = number
+
+        
     }
     
 
